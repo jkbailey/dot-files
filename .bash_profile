@@ -81,11 +81,3 @@ http() {
             command sudo /Applications/MAMP/Library/bin/apachectl stop;
     fi
 }
-
-function zenfetch() {
-  last_pwd=$(pwd)
-  cd ~/Projects/Clover/MediaApi
-  zencoder_fetcher -c 50 -u http://zencoder:UtunsXkoyqEmdIvrZoYLC3IJfHv2zVHxWlYzFQyKZBcTjJtcLv@mediaplayer.cloversites.dev/notifications/zen/job bf9d8411b36e25bf5acb10a0e41951c3
-  zencoder_fetcher -c 50 -u http://zencoder:UtunsXkoyqEmdIvrZoYLC3IJfHv2zVHxWlYzFQyKZBcTjJtcLv@mediaplayer.cloversites.dev/notifications/zen/output bf9d8411b36e25bf5acb10a0e41951c3
-  cd $last_pwd
-}
